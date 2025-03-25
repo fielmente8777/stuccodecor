@@ -3,9 +3,9 @@ import { imageUrl } from "./links";
 
 export const homePageData = {
   bannerData: {
-    title: "Bringing the Flavors of Asia to Your Plate",
+    title: "CONTEMPORARY EXQUISITE ONE OF A KIND",
     src: imageUrl + "img1.webp",
-    desc: "CONTEMPORARYEXQUISITE ONE OF A KIND",
+    desc: "",
     buttons: [
       {
         label: "products",

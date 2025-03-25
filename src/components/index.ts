@@ -13,6 +13,7 @@ import Paragraph from "./Paragraph/Paragraph";
 import PopupForm from "./PopupForm";
 import Call from "./ContactButton/Call";
 import Whatsapp from "./ContactButton/WhatsApp";
+import { WhyStuccoCard } from "./cards";
 export {
   Container,
   Section,
@@ -29,4 +30,5 @@ export {
   PopupForm,
   Call,
   Whatsapp,
+  WhyStuccoCard,
 };

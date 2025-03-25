@@ -26,39 +26,13 @@ export interface footerLinkProps {
   }[];
 }
 
-export interface AboutUsDataProps {
-  title: string;
-  subtitle: string;
-  desc: string;
-  src: string;
-  label: string;
-  href: string;
-  index?: number;
-}
-
-export interface FeaturesDataProps {
-  title: string;
-  desc: string;
-  
-}
-
-export interface FeatureCardProps {
-  title: string;
-  subtitle: string;
-  icon: JSX.Element;
-}
-
-export interface OurFeaturesDataProps {
+export interface whyStucco {
   title: string;
   desc: string;
   images: {
-    id: number;
-    src: string;
-    title: string;
+      id: number;
+      src: string;
+      title: string;
+      desc: string;
   }[];
-}
-
-export interface GalleryDataProps {
-  title: string;
-  images: string[];
 }

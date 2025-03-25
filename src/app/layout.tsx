@@ -14,8 +14,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Yakumi ",
-  description: "Yakumi | Bringing the Flavors of Asia to Your Plate",
+  title: "Stucco Decor",
+  description: "",
 };
 
 export default function RootLayout({

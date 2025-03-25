@@ -39,8 +39,8 @@ const Footer = () => {
               {link.links.map((item, i) => (
                 <>
                   {!item.href ? (
-                    <p key={i} className="text-sm font-semibold">
-                      {item.label}
+                    <p key={i} className="text-sm font-semibold capitalize">
+                      {item.title}  {item.label}
                     </p>
                   ) : (
                     <Link

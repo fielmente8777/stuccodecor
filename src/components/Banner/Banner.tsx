@@ -1,7 +1,7 @@
-// import Image from "next/image";
-import Paragraph from "../Paragraph/Paragraph";
-import Button from "../Button";
-import LazyLoadedVideo from "../LazyLoadedVideo";
+
+import Image from "next/image";
+import Container from "../SectionComponents/Container";
+import Link from "next/link";
 
 interface BannerProps {
   title: string;
@@ -12,32 +12,18 @@ interface BannerProps {
     href: string;
   }[];
 }
-const Banner: React.FC<BannerProps> = ({ title, desc, src, buttons }) => {
+const Banner: React.FC<BannerProps> = ({ title, src, buttons }) => {
   return (
-    <section className="max-w-[1600px] mx-auto bg-primary text-white lg:mb-10">
-      <div className="grid lg:grid-cols-9 items-center gap-3 justify-center grid-cols-1">
-        <div className="lg:col-span-4 w-full max-md:px-5 max-md:pt-4">
-          <div className="flex flex-col gap-4 ml-auto max-w-lg w-full">
-            <h1 className="largeHeading font_go uppercase letter_spacing font-semibold max-sm:text-center">
-              {title}
-            </h1>
-            <Paragraph className={"mt-4 description1 text-white max-sm:text-center"} text={desc} />
-            <div className="flex items-center gap-5 mt-4">
-              {buttons.map((button, i) => (
-                <Button
-                  key={i}
-                  label={button.label}
-                  href={button.href}
-                  className={`${i === 0 ? "bg-secondary" : "bg-white !text-secondary"} `}
-                />
-              ))}
+    <section className="max-w-[1600px] mx-auto bg-primary text-white">
+      <div className="relative aspect-video md:aspect-[4/1.7]">
+        <Image src={src} alt="banner" fill className="object-cover" />
+        <div className="absolute inset-0">
+          <Container>
+            <div className="flex flex-col w-full h-full">
+            <h1>{title}</h1>
+            <Link href={buttons[0].href}>{buttons[0].label}</Link>
             </div>
-          </div>
-        </div>
-        <div className="lg:col-span-5">
-          <div className="relative w-full lg:aspect-video aspect-[4/3]">
-            <LazyLoadedVideo src={src} poster={src} controls={false} />
-          </div>
+          </Container>
         </div>
       </div>
     </section>

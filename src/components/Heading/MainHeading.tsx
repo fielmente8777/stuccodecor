@@ -13,7 +13,7 @@ const MainHeading: React.FC<HeadingProps> = ({
   title,
   className = "",
   h1,
-  h2=true,
+  h2,
   h3,
   h4,
 }) => {
