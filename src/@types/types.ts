@@ -36,3 +36,9 @@ export interface whyStucco {
       desc: string;
   }[];
 }
+
+export interface commonProps {
+  title: string;
+  desc: string[];
+  image: string;
+}

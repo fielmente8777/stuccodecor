@@ -4,7 +4,7 @@ import { imageUrl } from "./links";
 export const homePageData = {
   bannerData: {
     title: "CONTEMPORARY EXQUISITE ONE OF A KIND",
-    src: imageUrl + "img1.webp",
+    src: imageUrl + "bnr1.webp",
     desc: "",
     buttons: [
       {
@@ -24,7 +24,7 @@ export const homePageData = {
     learn about our commitment to quality and customer satisfaction.
     Thank you for choosing Stucco Décor Moulding where your dreams of
     elegance and sophistication begin.`,
-    src: imageUrl + "img2.webp",
+    src: imageUrl + "im3.webp",
   },
   WhyChooseUs: {
     title: "Why Choose Us",
@@ -36,48 +36,50 @@ export const homePageData = {
     images: [
       {
         id: 1,
-        src: imageUrl + "img3.webp",
+        src: imageUrl + "card1.webp",
         title: "Quality Assurance",
         desc: "We adhere to stringent quality control measures throughout the production process to ensure that our products meet the highest industry standards.",
       },
       {
         id: 2,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "card2.webp",
         title: "Competitive Pricing",
         desc: "Pricing: While maintaining uncompromised quality, we strive to offer competitive pricing to help you optimize your budget.",
       },
       {
         id: 3,
-        src: imageUrl + "img3.webp",
+        src: imageUrl + "card3.webp",
         title: "Timely Delivery",
         desc: "We understand the importance of deadlines and are committed to delivering orders promptly, ensuring minimal disruption to your operations.",
       },
       {
         id: 4,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "card4.webp",
         title: "Customization",
         desc: "We offer a wide range of moulding options, including custom designs, sizes, and finishes, allowing us to tailor our products to your specific requirements.",
       },
     ],
   },
   ourProducts: {
-    title: "OUR Products",
-    subTitle: "Checkout our Exterior Products",
-    label: "products",
-    href: "/exterior-products",
-  },
-  qualityManufacturer: {
-    title: "Quality Manufacturer",
-    subTitle: "I Need a Moulding Quote",
-    label: "need an estimate",
-    href: "/quote-form",
+    title: ["OUR Products", "Quality Manufacturer"],
+    subTitle: ["Checkout our Exterior Products", "I Need a Moulding Quote"],
+    links: [
+      {
+        label: "products",
+        href: "/exterior-products",
+      },
+      {
+        label: "need an estimate",
+        href: "/quote-form",
+      },
+    ],
   },
 };
 
 export const whatWeDoPageData = {
   bannerData: {
     title: "What We Do",
-    src: imageUrl + "img5.webp",
+    src: imageUrl + "im12.webp",
     links: [
       {
         label: "home",
@@ -97,7 +99,7 @@ export const whatWeDoPageData = {
       "Our state-of-the-art manufacturing facility is equipped with the latest technology and staffed by skilled artisans who meticulously craft each moulding piece to perfection. From traditional designs to contemporary styles, we offer a wide range of options to suit every taste and architectural need.",
       "Whether you’re an architect seeking to enhance the appeal of your projects. A builder looking to stand out from the competition or a homeowner looking to add elegance to your home’s curb appeal. Stucco Décor  is your trusted partner for superior stucco moulding solutions where quality and creativity come together to shape extraordinary surfaces.",
     ],
-    images: ["", ""],
+    images: [imageUrl + "im5.webp", imageUrl + "im6.webp"],
   },
   briefHistory: {
     title: "Brief history of exterior mouldings",
@@ -106,6 +108,8 @@ export const whatWeDoPageData = {
       "The earliest known use of exterior moulding can be traced back to ancient civilizations such as the Egyptians, Greeks, and Romans. These cultures used mouldings to embellish the facades of temples, palaces, and other important structures. Mouldings were often carved from stone and used to create decorative cornices, friezes, and other architectural elements. In the 20th century, exterior moulding continued to be used in architectural design, although with some changes in materials and styles. Concrete, synthetic materials, and precast elements became popular alternatives to traditional stone and plaster mouldings. Modernist architects experimented with minimalist designs, but exterior moulding remained a versatile tool for adding texture, depth, and visual interest to building facades.",
       "Today, exterior moulding continues to be a key element of architectural design, with a wide range of materials, styles, and applications available to architects, builders, and homeowners. Whether used to evoke classical elegance, add decorative flair, or enhance modernist simplicity, exterior moulding remains an enduring feature of architectural expression.",
     ],
+    image: imageUrl + "im5.webp",
+
   },
   introductionToMaterial: {
     title: "Introduction to Material",
@@ -116,49 +120,49 @@ export const whatWeDoPageData = {
     cards: [
       {
         id: 1,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Lightweight",
         desc: "EPS moulding is lightweight, making it easier to handle and install compared to traditional materials like wood or concrete. Its lightweight nature reduces the load on the building structure and simplifies transportation and handling during construction.",
       },
       {
         id: 2,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Versatility",
         desc: "EPS can be easily molded and shaped into a wide variety of profiles and designs, offering versatility in architectural applications. It can mimic the look of traditional materials such as wood, stone, or stucco, allowing for seamless integration with different architectural styles.",
       },
       {
         id: 3,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Insulation Properties",
         desc: "EPS has inherent thermal insulation properties, which can help improve the energy efficiency of buildings. Exterior moulding made from EPS can help reduce thermal bridging and heat loss through walls, contributing to lower heating and cooling costs.",
       },
       {
         id: 4,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Cost-Effective",
         desc: "EPS exterior moulding is generally more affordable than traditional materials like wood, stone, or concrete. Its lightweight construction reduces labor costs associated with handling and installation, and its durability can result in long-term savings on maintenance and replacement.",
       },
       {
         id: 5,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Ease of Installation",
         desc: "EPS exterior moulding is lightweight and easy to install with standard adhesives and fasteners. Its pre-molded designs simplify application, reducing labor and saving time. Durable and efficient, it enhances construction speed and quality. Perfect for quick, seamless exterior finishes.",
       },
       {
         id: 6,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Durable",
         desc: "EPS exterior moulding is lightweight yet highly durable, resisting weather, moisture, insects, and rot. It won’t warp, crack, or decay, ensuring lasting performance. This makes it a low-maintenance solution for exterior detailing. Its resilience provides long-term value and reliability.",
       },
       {
         id: 7,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Customization",
         desc: "EPS is highly customizable to fit specific design needs and aesthetics. It can be shaped into intricate forms, curves, and fine details. This flexibility enables diverse design possibilities. Architects can explore creative solutions with ease. EPS supports innovative and unique architectural designs.",
       },
       {
         id: 8,
-        src: imageUrl + "img4.webp",
+        src: imageUrl + "im10.webp",
         title: "Environmental Friendliness",
         desc: "EPS is a recyclable material, making it eco-friendly for exterior moulding. It can be repurposed for various applications, reducing waste. Recycling EPS helps minimize environmental impact. Its sustainability supports greener construction practices. EPS moulding offers durability with less ecological footprint.",
       },
@@ -171,10 +175,12 @@ export const whatWeDoPageData = {
       "This process ensures strength, durability and flexibility thus providing high quality architectural shapes at a very cost effective price in comparison to traditional materials like wood, stone, or concrete.",
       "Its lightweight construction reduces labor costs associated with handling and installation, and its durability can result in long-term savings on maintenance and or replacement thus making our moulding an ideal choice for your next project.",
     ],
+    image: imageUrl + "im10.webp",
   },
   hundredsOfCustomers: {
     title: "Hundreds of customers trust our company",
-    src: "",
+    src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/WhatsApp-Video.mp4",
+    image: "/Background.png",
     desc: [
       "We are experts & certified Staff",
       "We only provide quality Products",
@@ -208,7 +214,7 @@ export const exteriorProductspageData = {
       "KEYSTONE",
       "QUOIN",
       "BASE and CAP",
-      "BASE and CAP",
+      "COLUMN",
     ],
   },
 };
@@ -227,20 +233,174 @@ export const portfolioPageData = {
       },
     ],
   },
-  productsCategory: {
-    title: "Products Category",
+  
     products: [
-      "TRIM",
-      "SILL",
-      "BAND",
-      "CORNICE",
-      "PILASTER",
-      "KEYSTONE",
-      "QUOIN",
-      "BASE and CAP",
-      "BASE and CAP",
+      {
+        src:imageUrl + "port/im1.webp",
+      },
+      {
+        src:imageUrl + "port/im2.webp",
+      },
+      {
+        src:imageUrl + "port/im3.webp",
+      },
+      {
+        src:imageUrl + "port/im4.webp",
+      },
+      {
+        src:imageUrl + "port/im5.webp",
+      },
+      {
+        src:imageUrl + "port/im6.webp",
+      },
+      {
+        src:imageUrl + "port/im7.webp",
+      },
+      {
+        src:imageUrl + "port/im8.webp",
+      },
+      {
+        src:imageUrl + "port/im9.webp",
+      },
+      {
+        src:imageUrl + "port/im10.webp",
+      },
+      {
+        src:imageUrl + "port/im11.webp",
+      },
+      {
+        src:imageUrl + "port/im12.webp",
+      },
+      {
+        src:imageUrl + "port/im13.webp",
+      },
+      {
+        src:imageUrl + "port/im14.webp",
+      },
+      {
+        src:imageUrl + "port/im15.webp",
+      },
+      {
+        src:imageUrl + "port/im16.webp",
+      },
+      {
+        src:imageUrl + "port/im17.webp",
+      },
+      {
+        src:imageUrl + "port/im18.webp",
+      },
+      {
+        src:imageUrl + "port/im19.webp",
+      },
+      {
+        src:imageUrl + "port/im20.webp",
+      },
+      {
+        src:imageUrl + "port/im21.webp",
+      },
+      {
+        src:imageUrl + "port/im22.webp",
+      },
+      {
+        src:imageUrl + "port/im23.webp",
+      },
+      {
+        src:imageUrl + "port/im24.webp",
+      },
+      {
+        src:imageUrl + "port/im25.webp",
+      },
+      {
+        src:imageUrl + "port/im26.webp",
+      },
+      {
+        src:imageUrl + "port/im27.webp",
+      },
+      {
+        src:imageUrl + "port/im28.webp",
+      },
+      {
+        src:imageUrl + "port/im29.webp",
+      },
+      {
+        src:imageUrl + "port/im30.webp",
+      },
+      {
+        src:imageUrl + "port/im31.webp",
+      },
+      {
+        src:imageUrl + "port/im32.webp",
+      },
+      {
+        src:imageUrl + "port/im33.webp",
+      },
+      {
+        src:imageUrl + "port/im34.webp",
+      },
+      {
+        src:imageUrl + "port/im35.webp",
+      },
+      {
+        src:imageUrl + "port/im36.webp",
+      },
+      {
+        src:imageUrl + "port/im37.webp",
+      },
+      {
+        src:imageUrl + "port/im38.webp",
+      },
+      {
+        src:imageUrl + "port/im39.webp",
+      },
+      {
+        src:imageUrl + "port/im40.webp",
+      },
+      {
+        src:imageUrl + "port/im41.webp",
+      },
+      {
+        src:imageUrl + "port/im42.webp",
+      },
+      {
+        src:imageUrl + "port/im43.webp",
+      },
+      {
+        src:imageUrl + "port/im44.webp",
+      },
+      {
+        src:imageUrl + "port/im45.webp",
+      },
+      {
+        src:imageUrl + "port/im46.webp",
+      },
+      {
+        src:imageUrl + "port/im47.webp",
+      },
+      {
+        src:imageUrl + "port/im48.webp",
+      },
+      {
+        src:imageUrl + "port/im49.webp",
+      },
+      {
+        src:imageUrl + "port/im50.webp",
+      },
+      {
+        src:imageUrl + "port/im51.webp",
+      },
+      {
+        src:imageUrl + "port/im52.webp",
+      },
+      {
+        src:imageUrl + "port/im53.webp",
+      },
+      {
+        src:imageUrl + "port/im56.webp",
+      },
+      {
+        src:imageUrl + "port/im57.webp",
+      }
     ],
-  },
 };
 
 export const contactPageData = {

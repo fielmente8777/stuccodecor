@@ -14,6 +14,7 @@ import PopupForm from "./PopupForm";
 import Call from "./ContactButton/Call";
 import Whatsapp from "./ContactButton/WhatsApp";
 import { WhyStuccoCard } from "./cards";
+import Banner2 from './Banner/Banner2';
 export {
   Container,
   Section,
@@ -25,6 +26,7 @@ export {
   Map,
   Button,
   Banner,
+  Banner2,
   MainHeading,
   Paragraph,
   PopupForm,

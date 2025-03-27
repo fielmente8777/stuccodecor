@@ -16,12 +16,12 @@ const Banner: React.FC<BannerProps> = ({ title, src, buttons }) => {
   return (
     <section className="max-w-[1600px] mx-auto bg-primary text-white">
       <div className="relative aspect-video md:aspect-[4/1.7]">
-        <Image src={src} alt="banner" fill className="object-cover" />
-        <div className="absolute inset-0">
+        <Image src={src} alt="banner" fill className="object-cover object-left" priority />
+        <div className="absolute top-1/2 left-8 -translate-y-1/2">
           <Container>
             <div className="flex flex-col w-full h-full">
             <h1>{title}</h1>
-            <Link href={buttons[0].href}>{buttons[0].label}</Link>
+            <Link href={buttons[0].href} className="w-fit bg-primary px-6 py-3 rounded-md font-semibold text-white uppercase">{buttons[0].label}</Link>
             </div>
           </Container>
         </div>

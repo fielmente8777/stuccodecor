@@ -3,6 +3,7 @@ import { homePageData } from "@/data/pageData";
 import About from "./components/About";
 import MainHeading from "../../components/Heading/MainHeading";
 import WhyStucco from "./components/WhyStucco";
+import OurProducts from "./components/OurProducts";
 export default function Home() {
   return (
     <main>
@@ -21,6 +22,7 @@ export default function Home() {
         </div>
       </SectionWithContainer>
       <WhyStucco {...homePageData.whyStucco} />
+      <OurProducts {...homePageData.ourProducts} />
     </main>
   );
 }
