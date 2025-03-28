@@ -1,5 +1,5 @@
 "use client";
-import { FooterLink, SocialLink } from "@/data/links";
+import { FooterLink, SocialLink2 } from "@/data/links";
 import SectionWithContainer from "./SectionComponents/SectionWithContainer";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,23 +11,23 @@ const Footer = () => {
   return (
     <footer className="max-screen bg-secondary text-white">
       <SectionWithContainer sectionClassName="!pb-0">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 gap-7 lg:grid-cols-4">
             <div className="flex flex-col gap-4">
               <Image
                 src={"/logo2.png"}
                 alt="logo"
-                width={300}
+                width={270}
                 height={100}
                 className="object-contain"
               />
 
               <div className="flex gap-4">
-                {SocialLink.map((link, i) => (
+                {SocialLink2.map((link, i) => (
                   <Link
                     key={i}
                     href={link.href}
-                    className="text-white bg-primary w-7 h-7  aspect-square rounded-lg border border-primary flex items-center justify-center"
+                    className="text-white bg-primary w-7 h-7 hover:bg-quaternary aspect-square rounded-sm flex items-center justify-center"
                   >
                     {link.icon}
                   </Link>

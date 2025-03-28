@@ -3,7 +3,7 @@ import { categoryData } from "@/data/categoryData";
 import ProductsList from "./components/ProductsList";
 
 interface Params {
-  params: { products: string };
+  params: Promise<{ products: string }>;
 }
 
 export async function generateStaticParams() {
@@ -30,9 +30,12 @@ export async function generateMetadata(props: Params) {
 }
 
 
-export default async function Page({ params }: { params: { products: string } }) {
-  const  products  = (await params).products;
-  const data = categoryData.find((item) => item.slug === products);
+
+
+const page = async (prop: Params) => {
+  const params = await prop.params;
+  const paramsData = await params.products;
+  const data = categoryData.find((item) => item.slug === paramsData);
 
   if (!data) {
     return <p>Category not found</p>;
@@ -50,3 +53,5 @@ export default async function Page({ params }: { params: { products: string } })
     </main>
   );
 }
+
+export default page

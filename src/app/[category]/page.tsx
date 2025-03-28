@@ -25,49 +25,43 @@ export async function generateMetadata(props: Params) {
 
   return {
     title: data.title,
-    // openGraph: {
-    //   title: data.title,
-    //   // url: `https://www.minimalisthotels.com/${data.slug}`,
-    //   siteName: "Kamal Farms Karjat",
-    //   locale: "en-IN",
-    //   type: "website",
-    //   images: [
-    //     {
-    //       url: `https://www.minimalisthotels.com/${data.slug}/og-image.png`,
-    //       width: 800,
-    //       height: 600,
-    //       alt: `www.minimalisthotels.com/${data.slug}`,
-    //     },
-    //     {
-    //       url: `https://www.minimalisthotels.com/${data.slug}/og-image.png`,
-    //       width: 900,
-    //       height: 800,
-    //       alt: `www.minimalisthotels.com/${data.slug}`,
-    //     },
-    //     {
-    //       url: `https://www.minimalisthotels.com/${data.slug}/og-image.png`,
-    //       width: 1000,
-    //       height: 800,
-    //       alt: `www.minimalisthotels.com/${data.slug}`,
-    //     },
-    //   ],
-    // },
-    // alternate: {
-    //   languages: {
-    //     en: "/en/[slug]",
-    //   },
-    //   canonical: `https://www.minimalisthotels.com/${data.slug}`,
-    // },
   };
 }
 
-export default async function Page({
-  params,
-}: {
-  params: { category: string };
-}) {
-  const { category } = await params;
-  const data = categoryData.find((item) => item.slug === category);
+// export default async function Page({
+//   params,
+// }: {
+//   params: { category: string };
+// }) {
+//   const { category } = await params;
+//   const data = categoryData.find((item) => item.slug === category);
+//   const links = [
+//     {
+//       label: "home",
+//       href: "/",
+//     },
+//     {
+//       label: data?.slug || "unknown",
+//       href: `/${data?.slug}`,
+//     },
+//   ];
+
+//   if (!data) {
+//     return <p>Category not found</p>;
+//   }
+//   return (
+//     <main>
+//       <Banner2 title={data?.title.toUpperCase()} links={links} />
+//       {data && <Products {...data} />}
+//     </main>
+//   );
+// }
+
+ const page = async (prop: Params) => {
+  const params = await prop.params;
+  const paramsData = await params.category;
+  const data = categoryData.find((item) => item.slug === paramsData);
+
   const links = [
     {
       label: "home",
@@ -88,4 +82,6 @@ export default async function Page({
       {data && <Products {...data} />}
     </main>
   );
-}
+};
+
+export default page;

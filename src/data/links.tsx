@@ -2,11 +2,15 @@ import { footerLinkProps, navLinkProps, socialLinkProps } from "@/@types/types";
 import {
   FillCallIcon,
   FillFacebook,
+  FillFacebookIcon,
   FillInstagram,
+  FillInstagramIcon,
   FillLinkedin,
+  FillLinkedinIcon,
   FillLocationIcon,
   FillMailIcon,
   FillTwitter,
+  FillTwitterIcon,
 } from "@/icons/icons";
 
 export const imageUrl =
@@ -128,6 +132,32 @@ export const SocialLink: socialLinkProps[] = [
     id: 4,
     label: "linkedin",
     icon: <FillLinkedin />,
+    href: "https://www.linkedin.com/in/stucco-decor-486b46212/",
+  },
+];
+export const SocialLink2: socialLinkProps[] = [
+  {
+    id: 1,
+    label: "facebook",
+    icon: <FillFacebookIcon />,
+    href: "https://www.facebook.com/people/Stuccodecorcom/100068907789285/?ref=pages_you_manage#",
+  },
+  {
+    id: 2,
+    label: "twitter",
+    icon: <FillTwitterIcon />,
+    href: "https://x.com/Stuccodecor1",
+  },
+  {
+    id: 3,
+    label: "instagram",
+    icon: <FillInstagramIcon />,
+    href: "https://www.instagram.com/thestuccodecor/",
+  },
+  {
+    id: 4,
+    label: "linkedin",
+    icon: <FillLinkedinIcon />,
     href: "https://www.linkedin.com/in/stucco-decor-486b46212/",
   },
 ];
