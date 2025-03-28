@@ -3,7 +3,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 // import { useRouter } from "next/navigation";
-import { countries } from "@/data/countryCode";
+// import { countries } from "@/data/countryCode";
 import MainHeading from "./Heading/MainHeading";
 
 const Form = () => {
@@ -113,8 +113,9 @@ const Form = () => {
           Reach out to us – your taste adventure starts here!
         </p>
       </div>
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-3 bg-white rounded-lg overflow-hidden">
+      <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 bg-white rounded-lg overflow-hidden">
+          <label htmlFor="Name" className="text-sm text-[#222]">Name</label>
           <input
             id="Name"
             type="text"
@@ -123,11 +124,11 @@ const Form = () => {
             value={formData.userName}
             onChange={handleChange}
             required
-            className="w-full h-max px-4 py-3 outline-none bg-transparent"
+            className="w-full h-max px-4 py-3 outline-none focus:outline-none bg-transparent border border-gray-300"
           />
         </div>
-        <div className="flex items-center gap-3 bg-white rounded-lg overflow-hidden">
-          <select
+        <div className="flex flex-col gap-3 bg-white rounded-lg overflow-hidden">
+          {/* <select
             name="countryCode"
             value={formData.countryCode}
             onChange={handleChange}
@@ -140,7 +141,8 @@ const Form = () => {
                 {country.code}
               </option>
             ))}
-          </select>
+          </select> */}
+          <label htmlFor="phone" className="text-sm text-[#222]">Phone</label>
           <input
             type="text"
             name="userPhone"
@@ -149,11 +151,12 @@ const Form = () => {
             onChange={handleChange}
             required
             maxLength={10}
-            className="w-full px-4 py-3 rounded-lg outline-none"
+            className="w-full h-max px-4 py-3 outline-none focus:outline-none bg-transparent border border-gray-300 no-spinner"
           />
         </div>
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <div className="flex items-center gap-3 bg-white rounded-lg overflow-hidden">
+        <div className="flex flex-col gap-3 bg-white rounded-lg overflow-hidden">
+          <label htmlFor="email" className="text-sm text-[#222]">Email</label>
           <input
             type="text"
             name="userEmail"
@@ -161,27 +164,28 @@ const Form = () => {
             value={formData.userEmail}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 rounded-lg outline-none"
+           className="w-full h-max px-4 py-3 outline-none focus:outline-none bg-transparent border border-gray-300"
           />
         </div>
         {emailErrorMessage && (
           <p className="text-red-500">{emailErrorMessage}</p>
         )}
 
-        <div className="flex gap-3 bg-white rounded-lg overflow-hidden">
+        <div className="flex gap-3 flex-col bg-white rounded-lg overflow-hidden">
+          <label htmlFor="message" className="text-sm text-[#222]">Message</label>
           <textarea
             name="userMessage"
             placeholder="Tell us something about your enquiry!"
             value={formData.userMessage}
             onChange={handleChange}
             rows={5}
-            className="w-full px-4 py-3 rounded-lg resize-none outline-none"
+            className="w-full h-max px-4 py-3 outline-none focus:outline-none bg-transparent border border-gray-300"
           />
         </div>
       </div>
       <button
         type="submit"
-        className="bg-secondary text-sm text-white px-5 py-3 font-normal capitalize hover:bg-secondary/80 duration-500 rounded-full border"
+        className="bg-primary text-sm text-white px-5 py-3 font-normal capitalize hover:bg-primary/80 duration-500 border"
       >
         {formRes ? "Loading...." : "Submit"}
       </button>

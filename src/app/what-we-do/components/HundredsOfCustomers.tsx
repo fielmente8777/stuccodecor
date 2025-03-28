@@ -62,11 +62,11 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
         }`}
       >
         <div className="max-w-sm w-full">
-          <div className="relative w-full aspect-[4/7] bg-gray-700 p-2">
+            <div className="relative w-full aspect-[4/7] bg-gray-700 p-2">
             <button
               className="absolute top-4 z-10 border border-gray-700 w-5 h-5 flex items-center justify-center right-4"
               onClick={() => {
-                setIsOpen(false);
+              setIsOpen(false);
               }}
             >
               <IoClose />
@@ -74,10 +74,9 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
             <LazyLoadedVideo
               src={src}
               controls
-              muted={isOpen && false}
-              autoPlay={true}
+              muted={!isOpen}
             />
-          </div>
+            </div>
         </div>
       </div>
     </section>

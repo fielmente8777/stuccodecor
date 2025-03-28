@@ -12,6 +12,26 @@ import {
 export const imageUrl =
   "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/";
 
+export const trimImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/TRIM/";
+export const sillImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/SILL/";
+export const bandImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/BAND/";
+export const corniceImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/CORNICE/";
+export const pilasterImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/PILASTER/";
+export const keystoneImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/KEYSTONE/";
+export const quoinImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/QUOIN/";
+export const baseAndCapImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/BASEandCAP/";
+
+export const columnImageUrl =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/stuccoDecor/products/COLUMN/";
+
 export const NavLinksUpper: footerLinkProps[] = [
   {
     id: 1,
@@ -140,7 +160,7 @@ export const FooterLink: footerLinkProps[] = [
       {
         id: 5,
         label: "Download our Catalogue",
-        href: "",
+        href: "https://stuccodecor.com/wp-content/uploads/2024/06/21263-Stucco-Decor-2024-Catalogue_DIGITAL-3.pdf",
       },
       {
         id: 6,

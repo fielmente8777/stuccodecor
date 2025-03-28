@@ -1,4 +1,4 @@
-import { FillCallIcon, FillLocationIcon, FillMailIcon } from "@/icons/icons";
+import { OutLineLocation, OutlineMail, OutLinePhone } from "@/icons/icons";
 import { imageUrl } from "./links";
 
 export const homePageData = {
@@ -419,25 +419,25 @@ export const contactPageData = {
     ],
   },
   contactDetails: {
-    title: "Contact Details",
+    title: "Contact info",
     details: [
       {
         title: "number :",
         label: "647-477-6066",
         href: "tel:647-477-6066",
-        icon: <FillCallIcon />,
+        icon: <OutLinePhone />,
       },
       {
         title: "mail :",
         label: "info@stuccodecor.com",
         href: "mailto:info@stuccodecor.com",
-        icon: <FillMailIcon />,
+        icon: <OutlineMail />,
       },
       {
         title: "address :",
         label: "6101 Netherhart Rd., # 1, Mississauga, ON, L5T 1G5",
         href: "https://maps.app.goo.gl/bhppnhuAjQcPcqXG8",
-        icon: <FillLocationIcon />,
+        icon: <OutLineLocation />,
       },
     ],
   },

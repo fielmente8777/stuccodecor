@@ -34,9 +34,13 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            {FooterLink.map((link) => (
-              <div key={link.title} className="flex flex-col gap-4">
-                <h4 className="text-lg font-bold capitalize">{link.title}</h4>
+            {FooterLink.map((link, i) => (
+              <div key={i} className="flex flex-col gap-4">
+                <h2
+                  className={`text-lg font-bold capitalize ${i === 0 ? "text-white" : "text-primary"} `}
+                >
+                  {link.title}
+                </h2>
                 {link.links.map((item) => (
                   <>
                     {!item.href ? (
@@ -50,7 +54,7 @@ const Footer = () => {
                       <Link
                         key={item.title}
                         href={item.href}
-                        className="text-sm font-semibold flex items-center gap-2"
+                        className={`text-sm font-semibold flex items-center gap-2 ${i === 0 ? "text-primary" : "text-white"} `}
                       >
                         {item.icon && (
                           <span className="text-primary">{item.icon}</span>
@@ -71,7 +75,11 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex max-md:flex-col items-center lg:justify-between gap-4">
             <p className="text-center">
-              © All copyright {currentYear} <Link href="/" className="me-2 text-primary">Stucco Decor.</Link>{"  "}
+              © All copyright {currentYear}{" "}
+              <Link href="/" className="me-2 text-primary">
+                Stucco Decor.
+              </Link>
+              {"  "}
               <br className="lg:hidden" />
               Designed & Developed by{" "}
               <Link href="https://eazotel.com" className="font-bold">
@@ -79,7 +87,10 @@ const Footer = () => {
               </Link>
             </p>
             <p className="">
-              Marketing Partner: <Link href="/" className=" text-primary">One-shot Marketing</Link>
+              Marketing Partner:{" "}
+              <Link href="/" className=" text-primary">
+                One-shot Marketing
+              </Link>
             </p>
           </div>
         </div>
