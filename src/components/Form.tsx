@@ -4,7 +4,7 @@ import axios from "axios";
 import React, { useState } from "react";
 // import { useRouter } from "next/navigation";
 // import { countries } from "@/data/countryCode";
-import MainHeading from "./Heading/MainHeading";
+// import MainHeading from "./Heading/MainHeading";
 
 const Form = () => {
   // const router = useRouter();
@@ -104,7 +104,7 @@ const Form = () => {
       className="flex flex-col gap-4 text-base w-full h-full  rounded-lg text-secondary"
       id="contact"
     >
-      <div className="flex flex-col gap-2">
+      {/* <div className="flex flex-col gap-2">
         <MainHeading
           title="Craving authentic asian flavors ?"
           className="mediumHeading font_go font-semibold text-white text-center"
@@ -112,7 +112,7 @@ const Form = () => {
         <p className="description1 text-white text-center">
           Reach out to us – your taste adventure starts here!
         </p>
-      </div>
+      </div> */}
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-3 bg-white rounded-lg overflow-hidden">
           <label htmlFor="Name" className="text-sm text-[#222]">Name</label>

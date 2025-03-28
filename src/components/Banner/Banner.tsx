@@ -15,7 +15,7 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ title, src, buttons }) => {
   return (
     <section className="max-w-[1600px] mx-auto bg-primary text-white">
-      <div className="relative aspect-video md:aspect-[4/1.7]">
+      <div className="relative md:aspect-[4/1.7] aspect-[4/3.5]">
         <Image src={src} alt="banner" fill className="object-cover object-left" priority />
         <div className="absolute top-[40%] left-8 -translate-y-1/2">
           <Container>

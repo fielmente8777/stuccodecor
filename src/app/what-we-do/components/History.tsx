@@ -9,7 +9,7 @@ const History: React.FC<commonProps> = ({ title, desc, image }) => {
       <Container>
         <MainHeading h2 title={title} className="font-bold text-secondary largeHeading text-center capitalize" />
       </Container>
-      <div className="w-full rounded-2xl mt-8 p-4 grid grid-cols-2 box_shadow gap-4">
+      <div className="w-full rounded-2xl mt-8 p-4 grid md:grid-cols-2 grid-cols-1 box_shadow gap-4">
         <div className="relative w-full aspect-[4/2]">
           <Image src={image} alt="history" fill className="object-cover box_shadow" />
         </div>

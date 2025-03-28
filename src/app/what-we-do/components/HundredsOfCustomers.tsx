@@ -20,11 +20,11 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="max-screen">
-      <div className="relative w-full aspect-[16/5.5] -mb-4">
+      <div className="relative w-full md:aspect-[16/5.5] aspect-square md:-mb-4">
         <Image src={image} alt={title} fill className="object-cover" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <div className="max-w-[1150px] mx-auto">
-            <div className="w-full grid grid-cols-2 gap-4 text-white ">
+          <div className="max-w-[1150px] mx-auto max-lg:px-4">
+            <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-4 text-white ">
               <div className="">
                 <button
                   onClick={() => setIsOpen(true)}

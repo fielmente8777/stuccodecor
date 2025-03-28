@@ -108,12 +108,12 @@ const Reviews = () => {
   ];
   return (
     <SectionWithContainer>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 lg:max-w-7xl w-full mx-auto">
         <h2 className="text-secondary text-center font-bold mediumHeading">
           Our Reviews
         </h2>
-        <div className="flex items-center justify-center gap-4">
-          <div className="w-[15%] flex flex-col gap-2 items-center">
+        <div className="flex flex-col items-center justify-center gap-4">
+          <div className="md:w-[15%] flex flex-col gap-2 items-center">
             <h3 className="text-secondary text-center uppercase font-bold">
               excellent
             </h3>
@@ -133,7 +133,7 @@ const Reviews = () => {
             </p>
             <Image src="/google.svg" alt="alt" width={100} height={50} />
           </div>
-          <div className="w-[70%]">
+          <div className="md:w-[70%] w-full">
             <SliderSwip
               data={data}
               modules={[Navigation,Autoplay]}

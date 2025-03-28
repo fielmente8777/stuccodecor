@@ -12,7 +12,7 @@ interface aboutProps {
 const About: React.FC<aboutProps> = ({ title, src, subtitle, desc }) => {
   return (
     <SectionWithContainer sectionClassName="relative after:absolute after:bg-[url('/bg3.png')] after:w-[34.7rem] after:bg-no-repeat after:right-0 after:h-[80%] after:bottom-0 after:opacity-30 after:z-[-1] before:absolute before:bg-[url('/bg1.png')] before:w-[12rem] before:right-12 before:h-[10rem] before:bg-no-repeat before:top-[-2rem] before:opacity-30 before:z-[-1]">
-      <div className="lg:grid grid-cols-2 gap-28 lg:py-20 max-w-[80rem] mx-auto w-full">
+      <div className="grid md:grid-cols-2 grid-cols-1 md:gap-28 gap-4 lg:py-20 max-w-[80rem] mx-auto w-full">
         <div className="w-full relative aspect-[4/4.2] lg:after:absolute after:bg-[url('/bg2.png')] after:w-full after:bg-no-repeat after:h-[95%] after:right-[-18rem] after:top-[2rem] after:z-[-1]">
           <Image src={src} alt={title} fill className="object-cover rounded-sm" />
         </div>

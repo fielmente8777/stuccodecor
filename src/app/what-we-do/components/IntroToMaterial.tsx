@@ -1,5 +1,5 @@
 "use client";
-import {  MainHeading, Section } from "@/components";
+import { MainHeading, Section } from "@/components";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -31,11 +31,15 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
   return (
     <Section>
       <div className="max-w-[1200px] mx-auto w-full max-lg:px-4">
-        <MainHeading h2 title={title} className="font-bold manrope mediumHeading" />
+        <MainHeading
+          h2
+          title={title}
+          className="font-bold manrope mediumHeading"
+        />
       </div>
       <div className="w-full bg-secondary mt-4">
         <div className="max-w-[1200px] mx-auto w-full max-lg:px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8 py-4 w-full">
+          <div className="lg:grid hidden grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8 py-4 w-full">
             <div className="col-span-1">
               <div className="flex flex-col gap-4 w-full">
                 {category.map((item, index) => (
@@ -53,7 +57,9 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
               <div className="flex flex-col gap-4 w-full">
                 {selectCategory.map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <p className="text-white text-sm font-medium">{item.desc}</p>
+                    <p className="text-white text-sm font-medium">
+                      {item.desc}
+                    </p>
                     <div className="relative w-full aspect-[4/4.5] max-w-sm">
                       <Image
                         src={item.src}
@@ -67,12 +73,43 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
               </div>
             </div>
           </div>
+          <div className="lg:hidden block w-full py-4">
+            {category.map((item, index) => (
+              <details key={index} className="mb-4">
+                <summary
+                  className="bg-white py-2 px-4 text-start font-semibold text-primary"
+                  onClick={() => setSelectCategory(filterCards(item))}
+                >
+                  {item}
+                </summary>
+                <div className="flex flex-col gap-4 w-full">
+                  {selectCategory.map((item, index) => (
+                    <div key={index} className="flex flex-col gap-4 mt-4">
+                      <p className="text-white text-sm font-medium">
+                        {item.desc}
+                      </p>
+                      <div className="relative w-full aspect-[4/4.5] max-w-sm">
+                        <Image
+                          src={item.src}
+                          alt={item.title}
+                          fill
+                          className="object-cover rounded-md"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            ))}
+          </div>
         </div>
       </div>
       <div className="max-w-[1150px] mx-auto w-full max-lg:px-4">
         <div className="flex flex-col gap-4 py-4">
           {desc.map((item, index) => (
-            <p key={index} className="description2 text-tertiary">{item}</p>
+            <p key={index} className="description2 text-tertiary">
+              {item}
+            </p>
           ))}
         </div>
       </div>

@@ -340,9 +340,7 @@ export const portfolioPageData = {
       {
         src:imageUrl + "port/im35.webp",
       },
-      {
-        src:imageUrl + "port/im36.webp",
-      },
+      
       {
         src:imageUrl + "port/im37.webp",
       },

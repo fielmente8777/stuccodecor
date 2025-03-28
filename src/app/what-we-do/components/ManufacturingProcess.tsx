@@ -12,7 +12,7 @@ const ManufacturingProcess: React.FC<commonProps> = ({
     <Section className="!pb-1">
       <div className="w-full rounded-2xl mt-4 p-4 box_shadow">
         <Container>
-          <div className="grid grid-cols-2 w-full gap-6">
+          <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-6">
             <div className="flex flex-col gap-4">
               <MainHeading h2 title={title} className="font-bold text-secondary mediumHeading " />
               {desc.map((item, index) => (

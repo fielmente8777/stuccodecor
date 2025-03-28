@@ -19,14 +19,14 @@ const WhatWeDo: React.FC<whatWedodata> = ({
     <Section className="lg:py-32">
       <div className="max-w-[1600px] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-          <div className="flex flex-col gap-20 w-full relative after:absolute after:-top-2 after:left-2 after:bg-[url('/im7.webp')] after:w-full after:bg-no-repeat after:h-full after:z-[-1]">
+          <div className="flex flex-col gap-20 w-full relative lg:after:absolute lg:after:-top-2 lg:after:left-2 lg:after:bg-[url('/im7.webp')] lg:after:w-full lg:after:bg-no-repeat lg:after:h-full lg:after:z-[-1]">
             {images.map((imag, index) => (
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className={`relative w-full aspect-[4/2.8] max-w-[26rem] rounded-2xl overflow-hidden flex ${index % 2 !== 0 ? "md:ml-auto" : "md:mr-auto"}`}
+                className={`relative w-full md:aspect-[4/2.8] aspect-[4/4] max-w-[26rem] rounded-2xl overflow-hidden flex ${index % 2 !== 0 ? "md:ml-auto hidden md:block" : "md:mr-auto"}`}
                 key={index}
               >
                 <Image src={imag} alt={title} fill className="object-cover" />
