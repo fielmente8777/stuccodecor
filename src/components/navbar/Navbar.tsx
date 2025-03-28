@@ -2,11 +2,10 @@
 import Link from "next/link";
 import { NavLink, NavLinksUpper, SocialLink } from "@/data/links";
 import Image from "next/image";
-import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
-import { MenuBurger, Outlinecall } from "@/icons/icons";
+import { MenuBurger } from "@/icons/icons";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -27,8 +26,8 @@ const Navbar: React.FC = () => {
       {/* nav upper */}
       <div className="bg-secondary">
         <div className="max-w-[1500px] mx-auto py-2">
-          <nav className="flex items-center justify-between">
-            <ul className="flex items-center gap-4 max-w-xl ms-32">
+          <nav className="flex items-center max-lg:flex-col justify-between">
+            <ul className="flex items-center gap-4 max-w-xl lg:ms-32 w-full max-lg:px-4">
               {NavLinksUpper[0].links.map((link) => (
                 <li key={link.id} className="">
                   <Link
@@ -43,7 +42,7 @@ const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <ul className="flex items-center gap-4 max-w-xl ms-48">
+            <ul className="lg:flex hidden items-center gap-4 max-w-xl ms-48">
               {SocialLink.map((link) => (
                 <li key={link.id} className="">
                   <Link
@@ -57,7 +56,7 @@ const Navbar: React.FC = () => {
               ))}
             </ul>
             <ul className="flex items-center">
-              {NavLinksUpper[1].links.map((link,i) => (
+              {NavLinksUpper[1].links.map((link, i) => (
                 <li key={i} className="p-3">
                   <Link
                     href={link.href ? link.href : "#"}
@@ -72,16 +71,10 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <div className="max-w-[1500px] mx-auto">
-        <nav className="flex items-center justify-between">
-          <button
-            className={`text-4xl lg:hidden ${isOpen ? "rotate-90" : ""} transition-all duration-300 ease-in-out`}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <IoMdClose /> : <MenuBurger />}
-          </button>
+        <nav className="flex items-center lg:justify-between gap-36">
           <div className="ms-9">
             <Link
-              href="#"
+              href="/"
               className="relative h-[6rem] w-[8rem] aspect-auto block"
             >
               <Image
@@ -114,12 +107,12 @@ const Navbar: React.FC = () => {
               get direction
             </Link>
           </div>
-          <div className="lg:hidden block">
-            <Link href="tel:911234567890">
-              <span className="sr-only">call</span>
-              <Outlinecall />
-            </Link>
-          </div>
+          <button
+            className={`text-4xl lg:hidden text-primary font-bold  transition-all duration-300 ease-in-out`}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+             <MenuBurger />
+          </button>
         </nav>
       </div>
       <MobileNav isOpen={isOpen} setIsOpen={setIsOpen} />

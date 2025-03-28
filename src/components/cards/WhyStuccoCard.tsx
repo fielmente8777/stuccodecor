@@ -9,8 +9,8 @@ const WhyStuccoCard: React.FC<whyStucco['images'][0]> = ({ src, title, desc}) =>
             <div className="relative w-full aspect-[4/.7] rounded-lg overflow-hidden">
                 <Image src={src} alt={title} fill className="object-contain" />
             </div>
-            <MainHeading h3 title={title} className="text-center uppercase font-bold manrope" />
-            <Paragraph text={desc} className="text-tertiary text-center" />
+            <MainHeading h3 title={title} className="text-center capitalize font-bold description1" />
+            <Paragraph text={desc} className="text-tertiary text-center description2 leading-7" />
         </div>
     );
 }

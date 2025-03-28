@@ -7,15 +7,15 @@ const History: React.FC<commonProps> = ({ title, desc, image }) => {
   return (
     <Section>
       <Container>
-        <MainHeading h2 title={title} className="font-bold manrope" />
+        <MainHeading h2 title={title} className="font-bold text-secondary largeHeading text-center capitalize" />
       </Container>
-      <div className="w-full rounded-2xl mt-4 p-4 grid grid-cols-2 shadow-2xl">
-        <div className="relative w-full aspect-[4/2.7]">
-          <Image src={image} alt="history" fill className="object-contain" />
+      <div className="w-full rounded-2xl mt-8 p-4 grid grid-cols-2 box_shadow gap-4">
+        <div className="relative w-full aspect-[4/2]">
+          <Image src={image} alt="history" fill className="object-cover box_shadow" />
         </div>
         <div className="flex flex-col gap-4">
           {desc.map((item, index) => (
-            <p key={index}>{item}</p>
+            <p key={index} className="description2 text-tertiary leading-5">{item}</p>
           ))}
         </div>
       </div>

@@ -94,7 +94,7 @@ const FullscreenImagePopup = ({
             href={`/product-category${url}`}
             className="w-fit rounded-md font-semibold text-quaternary uppercase"
           >
-            {url.replace("/", "")}
+            {url.replace(/\//g, "")}
           </Link>
         </div>
       </div>

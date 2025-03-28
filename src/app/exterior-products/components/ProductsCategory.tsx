@@ -14,52 +14,52 @@ const ProductsCategory: React.FC<productsCategoryProps> = ({
   return (
     <Section>
       <Container>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-full">
           <MainHeading
             h2
             title={title}
-            className="font-bold manrope text-center uppercase"
+            className="font-bold manrope largeHeading text-secondary text-center uppercase"
           />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4 mt-4 max-w-6xl mx-auto w-full">
-          {products.slice(0, 4).map((product, index) => (
-            <div key={index} className="flex flex-col gap-4 w-full">
-              <Link
-                href={`/${product.toLowerCase()}`}
-                className="box_shadow rounded-2xl p-16 flex items-center justify-center"
-              >
-                {index === 5 ? products[3] : product}
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-x-8 gap-y-8 mt-4 max-w-6xl mx-auto w-full">
+            {products.slice(0, 4).map((product, index) => (
+              <div key={index} className="flex flex-col gap-4 w-full">
+                <Link
+                  href={`/${product.toLowerCase()}`}
+                  className="box_shadow rounded-2xl p-16 flex items-center justify-center description1"
+                >
+                  {index === 5 ? products[3] : product}
+                </Link>
+              </div>
+            ))}
+            <div className="w-full relative aspect-[4/1.9] box_shadow rounded-2xl">
+              <Image
+                src="/logo2.png"
+                alt="products"
+                fill
+                className="rounded-2xl"
+              />
             </div>
-          ))}
-          <div className="w-full relative aspect-[4/1.9] box_shadow rounded-2xl">
-            <Image
-              src="/logo2.png"
-              alt="products"
-              fill
-              className="rounded-2xl"
-            />
-          </div>
-          <div className="flex flex-col gap-4 w-full">
+            <div className="flex flex-col gap-4 w-full">
               <Link
                 href={`/${products[4].toLowerCase()}`}
-                className="box_shadow rounded-2xl p-16 flex items-center justify-center"
+                className="box_shadow rounded-2xl p-16 flex items-center justify-center description1"
               >
                 {products[4]}
               </Link>
             </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
-          {products.slice(5).map((product, index) => (
-            <div key={index} className="flex flex-col gap-4 w-full">
-              <Link
-                href={`/${product.toLowerCase()}`}
-                className="box_shadow rounded-2xl p-16 flex items-center justify-center"
-              >
-                {product}
-              </Link>
-            </div>
-          ))}
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4">
+            {products.slice(5).map((product, index) => (
+              <div key={index} className="flex flex-col gap-4 w-full">
+                <Link
+                  href={`/${product.toLowerCase()}`}
+                  className="box_shadow rounded-2xl p-16 flex items-center justify-center"
+                >
+                  {product}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

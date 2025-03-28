@@ -18,23 +18,23 @@ const Banner2: React.FC<BannerProps> = ({ title, src, links }) => {
         <div className="absolute inset-0  bg_gradient" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <Container>
-            <div className="flex flex-col w-full h-full text-white">
-              <div className="flex items-center gap-2 text-primary">
+            <div className="flex flex-col gap-2 w-full h-full text-white">
+              <div className="flex items-center gap-2 text-primary ">
                 <Link
                   href={links[0].href}
-                  className="text-primary w-fit font-semibold capitalize"
+                  className="text-primary w-fit font-semibold capitalize description2 manrope"
                 >
                   {links[0].label}
                 </Link>
                 |
                 <Link
                   href={links[1].href}
-                  className="text-primary w-fit font-semibold capitalize"
+                  className="text-primary w-fit font-semibold capitalize description2 manrope"
                 >
                     {links[1].label.replace(/-+/g, " ")}
                 </Link>
               </div>
-              <h1>{title}</h1>
+              <h1 className="largeHeading manrope font-bold">{title}</h1>
             </div>
           </Container>
         </div>

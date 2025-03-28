@@ -1,5 +1,5 @@
 "use client";
-import { Container, MainHeading, Section } from "@/components";
+import {  MainHeading, Section } from "@/components";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -30,12 +30,12 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
 
   return (
     <Section>
-      <Container>
-        <MainHeading h2 title={title} className="font-bold manrope" />
-      </Container>
-      <div className="w-full bg-secondary">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 py-4 w-full">
+      <div className="max-w-[1200px] mx-auto w-full max-lg:px-4">
+        <MainHeading h2 title={title} className="font-bold manrope mediumHeading" />
+      </div>
+      <div className="w-full bg-secondary mt-4">
+        <div className="max-w-[1200px] mx-auto w-full max-lg:px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8 py-4 w-full">
             <div className="col-span-1">
               <div className="flex flex-col gap-4 w-full">
                 {category.map((item, index) => (
@@ -53,7 +53,7 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
               <div className="flex flex-col gap-4 w-full">
                 {selectCategory.map((item, index) => (
                   <div key={index} className="flex flex-col gap-4">
-                    <p className="text-white">{item.desc}</p>
+                    <p className="text-white text-sm font-medium">{item.desc}</p>
                     <div className="relative w-full aspect-[4/4.5] max-w-sm">
                       <Image
                         src={item.src}
@@ -67,15 +67,15 @@ const IntroToMaterial: React.FC<introductionToMaterialProps> = ({
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
-      <Container>
+      <div className="max-w-[1150px] mx-auto w-full max-lg:px-4">
         <div className="flex flex-col gap-4 py-4">
           {desc.map((item, index) => (
-            <p key={index}>{item}</p>
+            <p key={index} className="description2 text-tertiary">{item}</p>
           ))}
         </div>
-      </Container>
+      </div>
     </Section>
   );
 };

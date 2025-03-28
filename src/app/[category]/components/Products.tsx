@@ -45,6 +45,7 @@ const Products: React.FC<dataProps> = ({ images, title }) => {
                   alt={item.alt}
                   fill
                   priority
+                  className="cursor-pointer"
                   onClick={() => handleOpen(item,pathName)} // Pass only selected image
                 />
               </div>

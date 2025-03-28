@@ -16,7 +16,7 @@ const NavbarBtn = () => {
             <Link
               href={`/${link.replace(/\s+/g, "-").toLowerCase()}`}
               key={link}
-              className={`w-full p-4 uppercase hover:bg-primary text-white hover:text-white ${pathName?.toLowerCase() === `/${link}` ? "bg-primary text-white" : ""}`}
+              className={`w-full p-4 uppercase hover:bg-primary text-white hover:text-white ${pathName?.toLowerCase() === `/${link}/` ? "bg-primary text-white" : ""}`}
             >
               {link}
             </Link>

@@ -61,7 +61,7 @@ export const homePageData = {
     ],
   },
   ourProducts: {
-    title: ["OUR Products", "Quality Manufacturer"],
+    title: ["OUR Products", "Quality Moulding Manufacturer"],
     subTitle: ["Checkout our Exterior Products", "I Need a Moulding Quote"],
     links: [
       {
@@ -108,7 +108,7 @@ export const whatWeDoPageData = {
       "The earliest known use of exterior moulding can be traced back to ancient civilizations such as the Egyptians, Greeks, and Romans. These cultures used mouldings to embellish the facades of temples, palaces, and other important structures. Mouldings were often carved from stone and used to create decorative cornices, friezes, and other architectural elements. In the 20th century, exterior moulding continued to be used in architectural design, although with some changes in materials and styles. Concrete, synthetic materials, and precast elements became popular alternatives to traditional stone and plaster mouldings. Modernist architects experimented with minimalist designs, but exterior moulding remained a versatile tool for adding texture, depth, and visual interest to building facades.",
       "Today, exterior moulding continues to be a key element of architectural design, with a wide range of materials, styles, and applications available to architects, builders, and homeowners. Whether used to evoke classical elegance, add decorative flair, or enhance modernist simplicity, exterior moulding remains an enduring feature of architectural expression.",
     ],
-    image: imageUrl + "im5.webp",
+    image: imageUrl + "im9.webp",
 
   },
   introductionToMaterial: {
@@ -175,7 +175,7 @@ export const whatWeDoPageData = {
       "This process ensures strength, durability and flexibility thus providing high quality architectural shapes at a very cost effective price in comparison to traditional materials like wood, stone, or concrete.",
       "Its lightweight construction reduces labor costs associated with handling and installation, and its durability can result in long-term savings on maintenance and or replacement thus making our moulding an ideal choice for your next project.",
     ],
-    image: imageUrl + "im10.webp",
+    image: imageUrl + "im11.webp",
   },
   hundredsOfCustomers: {
     title: "Hundreds of customers trust our company",

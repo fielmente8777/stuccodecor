@@ -14,9 +14,9 @@ export default function Home() {
           <MainHeading
             h2
             title={homePageData.WhyChooseUs.title}
-            className="!text-primary uppercase font-bold manrope"
+            className="!text-primary capitalize font-semibold largeHeading"
           />
-          <p className="text-center text-tertiary lg:max-w-[58rem] w-full">
+          <p className="text-center text-tertiary lg:max-w-[58rem] w-full description2">
             {homePageData.WhyChooseUs.desc}
           </p>
         </div>

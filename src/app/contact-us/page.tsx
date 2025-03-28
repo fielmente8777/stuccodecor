@@ -8,7 +8,7 @@ const page = () => {
     <main>
       <Banner2 {...contactPageData.bannerData} />
       <ContactUs {...contactPageData.contactDetails} />
-      <div className="max-w-6xl mx-auto max-lg:px-4 aspect-square lg:aspect-[4/1.5]">
+      <div className="max-w-6xl mx-auto max-lg:px-4 aspect-square lg:aspect-[4/1.5] mb-6">
         <LazyLoadedMap src={contactPageData.map} />
       </div>
     </main>

@@ -8,7 +8,7 @@ const WhyStucco: React.FC<whyStucco> = ({ title, images }) => {
     <Section>
       <div className="max-w-[1342px] mx-auto max-lg:px-4">
       <div className="flex flex-col gap-4 items-center justify-center w-full">
-        <MainHeading h2 title={title} className="" />
+        <MainHeading h2 title={title} className="mediumHeading !text-primary font-bold capitalize" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {images.map((image) => (
             <WhyStuccoCard key={image.id} {...image} />

@@ -1,10 +1,10 @@
 "use client";
 import { LazyLoadedVideo, MainHeading } from "@/components";
 import Image from "next/image";
-import { Container } from "@/components";
 import { useState } from "react";
 import { FillPlayButton, Tick } from "@/icons/icons";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 interface hundredsOfCustomersProps {
   title: string;
   src: string;
@@ -23,8 +23,8 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
       <div className="relative w-full aspect-[16/5.5] -mb-4">
         <Image src={image} alt={title} fill className="object-cover" />
         <div className="absolute inset-0 flex flex-col items-center justify-center">
-          <Container>
-            <div className="w-full grid grid-cols-2 text-white mt-16">
+          <div className="max-w-[1150px] mx-auto">
+            <div className="w-full grid grid-cols-2 gap-4 text-white ">
               <div className="">
                 <button
                   onClick={() => setIsOpen(true)}
@@ -37,21 +37,25 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
                 <MainHeading
                   h2
                   title={title}
-                  className="font-bold manrope text-white"
+                  className="font-bold manrope text-white mediumHeading mt-4"
                 />
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 lg:ms-44">
                 {desc.map((item, index) => (
-                  <p
+                  <motion.p
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
                     key={index}
-                    className="px-8 py-3 bg-black/60  font-semibold flex items-center gap-3 w-[25rem] hover:bg-white/30 transition-all duration-300 ease-in-out"
+                    className="px-8 py-3 bg-black/30  font-semibold flex items-center gap-3 w-[25rem] hover:bg-white/30 transition-all duration-300 ease-in-out"
                   >
                     <Tick /> {item}
-                  </p>
+                  </motion.p>
                 ))}
               </div>
             </div>
-          </Container>
+          </div>
         </div>
       </div>
       <div
@@ -62,21 +66,17 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
         }`}
       >
         <div className="max-w-sm w-full">
-            <div className="relative w-full aspect-[4/7] bg-gray-700 p-2">
+          <div className="relative w-full aspect-[4/7] bg-gray-700 p-2">
             <button
               className="absolute top-4 z-10 border border-gray-700 w-5 h-5 flex items-center justify-center right-4"
               onClick={() => {
-              setIsOpen(false);
+                setIsOpen(false);
               }}
             >
               <IoClose />
             </button>
-            <LazyLoadedVideo
-              src={src}
-              controls
-              muted={!isOpen}
-            />
-            </div>
+            <LazyLoadedVideo src={src} controls muted={!isOpen} />
+          </div>
         </div>
       </div>
     </section>

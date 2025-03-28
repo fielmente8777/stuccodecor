@@ -23,12 +23,12 @@ const OurProducts: React.FC<ourProducts> = ({ title, subTitle, links }) => {
           />
           <div className="absolute inset-0 z-10">
             <div className="flex w-full h-full items-center ">
-              <div className="flex flex-col justify-center gap-4 w-fit ml-[16rem]">
-                <h2 className="text-xl text-primary uppercase">{title[0]}</h2>
-                <h3 className="text-3xl text-white">{subTitle[0]}</h3>
+              <div className="flex flex-col justify-center gap-4 w-fit ml-[17rem]">
+                <h2 className="text-xl text-primary uppercase description2">{title[0]}</h2>
+                <h3 className="manrope text-white largeHeading lg:max-w-[35rem] max-lg:leading-[3.9rem] font-semibold">{subTitle[0]}</h3>
                 <Link
                   href={links[0].href}
-                  className="py-3 pe-16 ps-4 bg-primary text-white w-fit uppercase rounded-md font-semibold"
+                  className="py-5 pe-20 ps-10 bg-primary text-white w-fit uppercase rounded-md font-semibold description2 hover:bg-quaternary transition-colors ease-in-out duration-300"
                 >
                   {links[0].label}
                 </Link>
@@ -46,14 +46,14 @@ const OurProducts: React.FC<ourProducts> = ({ title, subTitle, links }) => {
             height={200}
             className="mt-[-1.5rem] ml-[-2rem] relative z-10 -mb-px"
           />
-          <div className="w-full col-span-2 flex items-center gap-10">
+          <div className="w-full col-span-2 flex items-center gap-10 lg:gap-48">
             <div className="flex flex-col justify-center gap-4 w-fit">
-              <h2 className="text-xl text-white uppercase">{title[1]}</h2>
-              <h3 className="text-3xl text-white">{subTitle[1]}</h3>
+              <h2 className="text-white uppercase text-sm">{title[1]}</h2>
+              <h3 className="manrope mediumHeading text-white font-semibold max-w-[22rem]">{subTitle[1]}</h3>
             </div>
             <Link
               href={links[1].href}
-              className="py-3 pe-16 ps-4 bg-secondary text-white w-fit uppercase rounded-md font-semibold"
+              className="py-5 pe-20 ps-10 bg-secondary text-white w-fit uppercase rounded-md font-semibold hover:bg-white hover:text-secondary transition-colors ease-in-out duration-300"
             >
               {links[1].label}
             </Link>

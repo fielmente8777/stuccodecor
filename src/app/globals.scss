@@ -104,17 +104,21 @@
   }
 
   .largeHeading {
-    font-size: 3rem;
-    line-height: normal;
+    font-size: 3.875rem;
+    line-height: 3.5rem; 
+    letter-spacing: -0.0625rem;
     @media screen and (max-width: 640px) {
       font-size: 2.5rem;
+      line-height: 2.5rem;
+      letter-spacing: -0.0625rem;
     }
   }
   .mediumHeading {
-    font-size: 2rem;
-    line-height: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
     @media screen and (max-width: 640px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
     }
   }
   .heading1 {

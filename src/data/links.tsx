@@ -81,17 +81,17 @@ export const NavLink: navLinkProps[] = [
   {
     id: 2,
     label: "What We Do",
-    href: "/what-we-do",
+    href: "/what-we-do/",
   },
   {
     id: 3,
     label: "Exterior Products",
-    href: "/exterior-products",
+    href: "/exterior-products/",
   },
   {
     id: 4,
     label: "Portfolio",
-    href: "/portfolio",
+    href: "/portfolio/",
   },
   {
     id: 5,
@@ -101,7 +101,7 @@ export const NavLink: navLinkProps[] = [
   {
     id: 6,
     label: "Contact Us",
-    href: "/contact-us",
+    href: "/contact-us/",
   },
 ];
 
