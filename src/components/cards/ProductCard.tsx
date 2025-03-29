@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ src, alt, title, desc, href }
       <div className="flex flex-col gap-2">
         <h3 className="text-tertiary font-bold uppercase">{title}</h3>
         <Link href={`/product/${href.replace(/\s/g, '-').replace(/\./g, '-').replace(/,/g, '-')}`} className="text-primary uppercase">{desc}</Link>
-        <Link href={`/product/${href.replace(/\s/g, '-').replace(/\./g, '-').replace(/,/g, '-')}`} className="text-white bg-quaternary rounded-sm px-4 py-2 w-fit">Read More</Link>
+        <Link href={`/product/${href.replace(/\s/g, '-').replace(/\./g, '-').replace(/,/g, '-')}`} className="text-white bg-quaternary rounded-md px-5 py-2 w-fit">Read More</Link>
       </div>
     </div>
   );

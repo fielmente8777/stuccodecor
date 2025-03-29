@@ -112,7 +112,7 @@ const Reviews = () => {
         <h2 className="text-secondary text-center font-bold mediumHeading">
           Our Reviews
         </h2>
-        <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex max-lg:flex-col items-center justify-center gap-4">
           <div className="md:w-[15%] flex flex-col gap-2 items-center">
             <h3 className="text-secondary text-center uppercase font-bold">
               excellent

@@ -20,12 +20,12 @@ const ProductsCategory: React.FC<productsCategoryProps> = ({
             title={title}
             className="font-bold manrope largeHeading text-secondary text-center uppercase"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-x-8 gap-y-8 mt-4 max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-x-8 lg:gap-y-8 gap-y-6 mt-4 max-w-6xl mx-auto w-full">
             {products.slice(0, 4).map((product, index) => (
               <div key={index} className="flex flex-col gap-4 w-full">
                 <Link
                   href={`/${product.toLowerCase()}`}
-                  className="box_shadow rounded-2xl p-16 flex items-center justify-center description1"
+                  className="box_shadow rounded-2xl p-16 flex items-center justify-center heading2"
                 >
                   {index === 5 ? products[3] : product}
                 </Link>
@@ -42,13 +42,13 @@ const ProductsCategory: React.FC<productsCategoryProps> = ({
             <div className="flex flex-col gap-4 w-full">
               <Link
                 href={`/${products[4].toLowerCase()}`}
-                className="box_shadow rounded-2xl p-16 flex items-center justify-center description1"
+                className="box_shadow rounded-2xl p-16 flex items-center justify-center heading2"
               >
                 {products[4]}
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6 mt-4">
             {products.slice(5).map((product, index) => (
               <div key={index} className="flex flex-col gap-4 w-full">
                 <Link

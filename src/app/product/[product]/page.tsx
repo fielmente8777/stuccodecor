@@ -72,14 +72,14 @@ const page = async (props: Params) => {
             className="rounded-md"
           />
         </div>
-        <div>
+        <div className="flex flex-col gap-4">
           <p className="uppercase text-tertiary">
             <Link href={`/`} className="capitalize">Home</Link>/
             <Link href={`/product-category/${category.slug}`} className="">{category.title}</Link>/
             {productData.alt}
           </p>
           <Link href={`/product-category/${category.slug}`} className="text-quaternary uppercase">{category.title}</Link>
-          <div className="mt-4 w-full h-px bg-gray-300"></div>
+          <div className="mt-4 w-full h-px bg-gray-300 md:mt-40"></div>
           <p className=" text-tertiary">
             Category :{" "}
             <Link href={`/product-category/${category.slug}`} className="text-quaternary uppercase">{category.title}</Link>

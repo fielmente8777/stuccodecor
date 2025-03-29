@@ -1,7 +1,7 @@
 "use client";
 import { LazyLoadedVideo, MainHeading } from "@/components";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FillPlayButton, Tick } from "@/icons/icons";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -18,6 +18,17 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
   desc,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
   return (
     <section className="max-screen">
       <div className="relative w-full md:aspect-[16/5.5] aspect-square md:-mb-4">
@@ -48,7 +59,7 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                     key={index}
-                    className="px-8 py-3 bg-black/30  font-semibold flex items-center gap-3 w-[25rem] hover:bg-white/30 transition-all duration-300 ease-in-out"
+                    className="px-8 py-3 bg-black/30  font-semibold max-lg:text-[0.7rem] flex items-center gap-3 md:w-[25rem] hover:bg-white/30 transition-all duration-300 ease-in-out"
                   >
                     <Tick /> {item}
                   </motion.p>
@@ -65,8 +76,8 @@ const HundredsOfCustomers: React.FC<hundredsOfCustomersProps> = ({
             : "opacity-0 scale-75 pointer-events-none"
         }`}
       >
-        <div className="max-w-sm w-full">
-          <div className="relative w-full aspect-[4/7] bg-gray-700 p-2">
+        <div className="max-w-sm w-full max-lg:px-4">
+          <div className="relative w-full lg:aspect-[4/7] aspect-[4/6] bg-gray-700 p-2">
             <button
               className="absolute top-4 z-10 border border-gray-700 w-5 h-5 flex items-center justify-center right-4"
               onClick={() => {

@@ -70,14 +70,14 @@ const FullscreenImagePopup = ({
         if (e.target === e.currentTarget) setOpenImgPopup(false);
       }}
     >
-      <div className="relative w-full h-full flex items-center justify-center">
-        <button
-          onClick={() => setOpenImgPopup(false)}
-          className="absolute z-50 top-4 right-6 w-10 h-10 flex justify-center items-center text-lg rounded-full bg-gray-600 hover:bg-primary/90 font-bold text-white"
-        >
-          <IoCloseSharp />
-        </button>
-        <div className="max-w-[38rem] p-4 bg-white h-min w-full mx-auto">
+      <div className=" w-full h-full flex items-center justify-center">
+        <div className="md:w-[40rem] w-[20rem] p-4 bg-white h-min mx-auto relative rounded-lg">
+          <button
+            onClick={() => setOpenImgPopup(false)}
+            className="absolute z-50 top-2 right-2 w-10 h-10 flex justify-center items-center text-lg rounded-full font-bold text-secondary"
+          >
+            <IoCloseSharp />
+          </button>
           <h2>{image.alt}</h2>
           {openImgPopup && image && (
             <div className="w-full relative aspect-[4/3] image-container">

@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                 <li key={link.id} className="">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="flex items-center gap-2 text-white description2"
+                    className="flex items-center gap-2 text-white lg:description2 text-[0.78rem]"
                   >
                     {link.icon && (
                       <span className="text-primary">{link.icon}</span>
@@ -55,12 +55,12 @@ const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <ul className="flex items-center max-lg:w-full">
+            <ul className="grid grid-cols-2 items-center max-lg:w-full">
               {NavLinksUpper[1].links.map((link, i) => (
                 <li key={i} className="p-3">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="flex items-center gap-2  text-[0.7rem] text-white uppercase bg-primary lg:px-[1.88rem] px-4 py-[0.81rem] rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out text-xs"
+                    className="flex items-center gap-2 w-full lg:text-xs text-[0.6rem] text-white uppercase bg-primary py-3 justify-center rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out"
                   >
                     {link.label}
                   </Link>

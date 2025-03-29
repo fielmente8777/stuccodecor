@@ -28,14 +28,14 @@ const Products: React.FC<dataProps> = ({ images, title }) => {
 
   return (
     <SectionWithContainer>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="w-full col-span-1 flex flex-col gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6">
+        <div className="w-full md:col-span-1 col-span-3 flex flex-col gap-4">
           <h2 className="text-2xl font-bold uppercase text-secondary">
             products
           </h2>
           <NavbarBtn />
         </div>
-        <div className="col-span-3 grid grid-cols-3 gap-6 mt-4">
+        <div className="col-span-3 grid md:grid-cols-3 grid-cols-1 gap-6 mt-4">
           {images.map((item, index) => (
             <div className="w-full flex flex-col gap-2" key={index}>
               <h3 className="uppercase text-primary">{item.alt}</h3>
