@@ -1,5 +1,5 @@
 "use client";
-import { ProductCard } from "@/components";
+import { ProductCard, Section } from "@/components";
 import { useState } from "react";
 const ITEMS_PER_PAGE = 9;
 
@@ -25,8 +25,8 @@ const ProductsList: React.FC<{ data: ProductCardProps }> = ({ data }) => {
   );
 
   return (
-    <div>
-      <div className="w-full px-4">
+    <Section>
+      <div className="w-full px-4 my-8">
         <p>
           Showing {startIndex + 1}-{startIndex + paginatedItems.length} of{" "}
           {totalItems} results
@@ -34,7 +34,7 @@ const ProductsList: React.FC<{ data: ProductCardProps }> = ({ data }) => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 px-4 mt-4">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-4 md:gap-8 gap-y-8 px-4 mt-4">
         {paginatedItems.map((image, index) => (
           <ProductCard
             key={index}
@@ -49,7 +49,7 @@ const ProductsList: React.FC<{ data: ProductCardProps }> = ({ data }) => {
 
       {/* Pagination Controls */}
       {totalPages > 1 && (
-        <div className="flex justify-center mt-6 space-x-2">
+        <div className="flex px-4 mt-6 space-x-2">
           {Array.from({ length: totalPages }, (_, i) => (
             <button
               key={i + 1}
@@ -63,7 +63,7 @@ const ProductsList: React.FC<{ data: ProductCardProps }> = ({ data }) => {
           ))}
         </div>
       )}
-    </div>
+    </Section>
   );
 };
 

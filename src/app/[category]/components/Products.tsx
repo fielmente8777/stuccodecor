@@ -28,7 +28,7 @@ const Products: React.FC<dataProps> = ({ images, title }) => {
 
   return (
     <SectionWithContainer>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-8 gap-6 max-w-7xl">
         <div className="w-full md:col-span-1 col-span-3 flex flex-col gap-4">
           <h2 className="text-2xl font-bold uppercase text-secondary">
             products
@@ -39,7 +39,7 @@ const Products: React.FC<dataProps> = ({ images, title }) => {
           {images.map((item, index) => (
             <div className="w-full flex flex-col gap-2" key={index}>
               <h3 className="uppercase text-primary">{item.alt}</h3>
-              <div className="w-full relative aspect-square">
+              <div className="w-full relative aspect-[4/2.5]">
                 <Image
                   src={item.src}
                   alt={item.alt}

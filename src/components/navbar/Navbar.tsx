@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
                 <li key={i} className="p-3">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="flex items-center gap-2 w-full lg:text-xs text-[0.6rem] text-white uppercase bg-primary py-3 justify-center rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out"
+                    className="flex items-center gap-2 w-full lg:text-xs text-[0.6rem] text-white uppercase bg-primary py-3 md:px-6 justify-center rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out"
                   >
                     {link.label}
                   </Link>
