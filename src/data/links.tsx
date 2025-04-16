@@ -100,7 +100,7 @@ export const NavLink: navLinkProps[] = [
   {
     id: 5,
     label: "Download our Catalogue",
-    href: "https://stuccodecor.com/wp-content/uploads/2024/06/21263-Stucco-Decor-2024-Catalogue_DIGITAL-3.pdf",
+    href: "/22520-Stucco Decor-Brochure.pdf",
   },
   {
     id: 6,
@@ -190,7 +190,7 @@ export const FooterLink: footerLinkProps[] = [
       {
         id: 5,
         label: "Download our Catalogue",
-        href: "https://stuccodecor.com/wp-content/uploads/2024/06/21263-Stucco-Decor-2024-Catalogue_DIGITAL-3.pdf",
+        href: "/22520-Stucco Decor-Brochure.pdf",
       },
       {
         id: 6,
