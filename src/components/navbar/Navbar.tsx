@@ -47,6 +47,8 @@ const Navbar: React.FC = () => {
                 <li key={link.id} className="">
                   <Link
                     href={link.href ? link.href : "#"}
+                    aria-label={link.label}
+                    target="_blank"
                     className="text-white bg-primary w-5  aspect-square rounded-sm flex items-center justify-center hover:bg-quaternary transition-colors duration-300 ease-in-out"
                   >
                     {link.icon}
@@ -91,6 +93,7 @@ const Navbar: React.FC = () => {
               <li key={link.id} className="">
                 <Link
                   href={link.href}
+                  target={link.id === 5 ? "_blank" : "_self"}
                   className={`${pathname === link.href ? "text-secondary" : ""} px-[0.63rem] py-[0.81rem] hover:border-primary hover:text-primary border-b-2 border-transparent transition-colors duration-300 ease-in-out font-medium`}
                 >
                   {link.label}

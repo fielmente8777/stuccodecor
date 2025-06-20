@@ -27,6 +27,7 @@ const Footer = () => {
                   <Link
                     key={i}
                     href={link.href}
+                    target="_blank"
                     className="text-white bg-primary w-7 h-7 hover:bg-quaternary aspect-square rounded-sm flex items-center justify-center"
                   >
                     {link.icon}
@@ -54,6 +55,7 @@ const Footer = () => {
                       <Link
                         key={item.title}
                         href={item.href}
+                        
                         className={`text-sm font-semibold flex items-center gap-2 ${i === 0 ? "text-primary" : "text-white"} `}
                       >
                         {item.icon && (
@@ -88,7 +90,7 @@ const Footer = () => {
             </p>
             <p className="">
               Marketing Partner:{" "}
-              <Link href="/" className=" text-primary">
+              <Link href="https://oneshotmarketing.ca/" target="_blank" className=" text-primary">
                 One-shot Marketing
               </Link>
             </p>
