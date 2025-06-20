@@ -55,7 +55,7 @@ const Footer = () => {
                       <Link
                         key={item.title}
                         href={item.href}
-                        
+                        target={item.id === 5 ? "_blank" : "_self"}
                         className={`text-sm font-semibold flex items-center gap-2 ${i === 0 ? "text-primary" : "text-white"} `}
                       >
                         {item.icon && (
@@ -74,7 +74,7 @@ const Footer = () => {
       </SectionWithContainer>
 
       <SectionWithContainer sectionClassName="bg-secondary !pb-6 !pt-0 text-white ">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="flex max-md:flex-col items-center lg:justify-between gap-4">
             <p className="text-center">
               © All copyright {currentYear}{" "}
@@ -82,11 +82,7 @@ const Footer = () => {
                 Stucco Decor.
               </Link>
               {"  "}
-              <br className="lg:hidden" />
-              Designed & Developed by{" "}
-              <Link href="https://eazotel.com" className="font-bold">
-                Eazotel
-              </Link>
+              
             </p>
             <p className="">
               Marketing Partner:{" "}
