@@ -21,7 +21,7 @@ const Reviews = () => {
       review:
         "This place was a rare find for me. They manufacture their own moldings and have decent prices. Their staff are extremely friendly and helpful.",
       date: "2024-05-19",
-      src: "/saif.PNG",
+      src: "/saif.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -31,7 +31,7 @@ const Reviews = () => {
       review:
         "Great product, good prices and the staff were easy to deal with. Definitely recommending them to my friends.",
       date: "2023-09-18",
-      src: "/g.PNG",
+      src: "/g.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -40,7 +40,7 @@ const Reviews = () => {
       name: "Kevin O'Rourke",
       review: "It was a great and quick service! Thanks",
       date: "2023-04-27",
-      src: "/kevin.PNG",
+      src: "/kevin.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -50,7 +50,7 @@ const Reviews = () => {
       review:
         "best product ever in the world, great service from staff and management. High recommended.",
       date: "2022-05-26",
-      src: "/shern.PNG",
+      src: "/shern.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -60,7 +60,7 @@ const Reviews = () => {
       review:
         "Skilled people, with good knowledge of the products. A complete package for housing is easily available in here. Highly recommended.",
       date: "2022-05-14",
-      src: "/murt.PNG",
+      src: "/murt.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -70,7 +70,7 @@ const Reviews = () => {
       review:
         "A highly professional environment with an admirable experienced staff! range of products maintaining the aura of modern and classical architecture are available to build your dream house. My personal recommendation is to pay a visit; you'll never regret it.",
       date: "2022-05-14",
-      src: "/syd.PNG",
+      src: "/syd.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -80,7 +80,7 @@ const Reviews = () => {
       review:
         "Manufacturer of world-class architectural mouldings at a very affordable price. I got custom made mouldings for my dream house. The owner of the business personally helped me with very innovative and latest designs as per my requirements. Thanks",
       date: "2022-05-13",
-      src: "/seraj.PNG",
+      src: "/seraj.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -90,7 +90,7 @@ const Reviews = () => {
       review:
         "Wide range and very durable products. Friendly staff and very good customer service",
       date: "2021-12-03",
-      src: "/nau.PNG",
+      src: "/nau.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -100,7 +100,7 @@ const Reviews = () => {
       review:
         "Friendly, professional, highly knowledgeable and eager to assist you beyond your expectation. I was astonished upon their product knowledge when I had some difficult design questions for my highly customizable product. They delivered it on time, with great precisions. I would highly recommend to visit their store for all your future stucco purchases.",
       date: "2021-12-01",
-      src: "/sydaf.PNG",
+      src: "/sydaf.png",
       gicon: "",
       rating: "",
       verify: "",
