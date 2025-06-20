@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <ul className="lg:flex hidden items-center gap-4 max-w-xl ms-48">
+            <ul className="lg:flex hidden items-center gap-4 max-w-xl ms-[9rem]">
               {SocialLink.map((link) => (
                 <li key={link.id} className="">
                   <Link
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
                 <li key={i} className="p-3">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="flex items-center gap-2 w-full lg:text-xs text-[0.6rem] text-white uppercase bg-primary py-3 md:px-6 justify-center rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out"
+                    className="flex items-center text-nowrap gap-2 w-full lg:text-xs text-[0.6rem] text-white uppercase bg-primary py-3 md:px-6 justify-center rounded-full font-bold hover:bg-quaternary  transition-colors duration-300 ease-in-out"
                   >
                     {link.label}
                   </Link>
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                 <Link
                   href={link.href}
                   target={link.id === 5 ? "_blank" : "_self"}
-                  className={`${pathname === link.href ? "text-secondary" : ""} px-[0.63rem] py-[0.81rem] hover:border-primary hover:text-primary border-b-2 border-transparent transition-colors duration-300 ease-in-out font-medium`}
+                  className={`${pathname === link.href ? "text-secondary" : ""} text-nowrap px-[0.63rem] py-[0.81rem] hover:border-primary hover:text-primary border-b-2 border-transparent transition-colors duration-300 ease-in-out font-medium`}
                 >
                   {link.label}
                 </Link>
