@@ -16,7 +16,7 @@ const Banner: React.FC<BannerProps> = ({ title, src, buttons }) => {
   return (
     <section className="max-w-[1600px] mx-auto text-white">
       <div className="relative md:aspect-[4/1.7] aspect-[4/3.5]">
-        <Image src={src} alt="banner" fill className="object-cover lg:object-left object-right" property="eager" priority loading="eager" />
+        <Image src={src} alt="banner" fill className="object-cover lg:object-left object-right" priority={true} loading="eager" />
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="absolute top-[40%] max-lg:top-1/2 lg:left-8 -translate-y-1/2">
           <Container>
