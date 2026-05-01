@@ -1,8 +1,7 @@
 import { SectionWithContainer } from "@/components";
-import Form from "@/components/Form";
+import StuccoContactForm from "@/components/StuccoContactForm";
 import Link from "next/link";
 import { JSX } from "react";
-
 interface contactDetailsProps {
   title: string;
   details: {
@@ -24,7 +23,8 @@ const ContactUs: React.FC<contactDetailsProps> = ({ title, details }) => {
           <p className="text-secondary largeHeading text-center font-semibold manrope">
             Feel free to write our Mouldings experts
           </p>
-          <Form />
+          {/* <Form /> */}
+          <StuccoContactForm />
         </div>
         <div className="">
           <h2 className="mediumHeading text-secondary font-bold">{title}</h2>
