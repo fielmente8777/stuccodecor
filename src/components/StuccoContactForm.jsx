@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 //add these variables to .env file
-const REACT_APP_EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID|| "";
-const REACT_APP_EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "";
-const REACT_APP_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC || "";
+const REACT_APP_EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const REACT_APP_EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ;
+const REACT_APP_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC ;
 
 const globalCSS = `
   .mkl-input:hover { border-color: #a0a8be !important; }
@@ -25,34 +25,33 @@ function InjectCSS() {
 
 const S = {
   supernova: {
-    minHeight: "100vh",
-    backgroundColor: "#f3f3fe",
+    // minHeight: "100vh",
+    backgroundColor: "#fff",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "40px 16px",
+    padding: "16px",
     fontFamily: '"Inter", sans-serif',
     fontSize: "16px",
     color: "#2c3345",
     boxSizing: "border-box",
   },
   formAll: {
-    backgroundColor: "#ffffff",
-    maxWidth: "752px",
+    // backgroundColor: "#ffffff",
     width: "100%",
     borderRadius: "4px",
-    boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+    // boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
     overflow: "hidden",
   },
   formSection: {
     listStyle: "none",
     margin: 0,
-    padding: "0 38px",
+    // padding: "0 38px",
   },
   formSectionMobile: {
     listStyle: "none",
     margin: 0,
-    padding: "0 20px",
+    // padding: "0 20px",
   },
   formLineDesktop: {
     display: "flex",
