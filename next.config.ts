@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   // output: "export",
   images: {
 
-    
     remotePatterns: [
       {
         protocol: "https",
