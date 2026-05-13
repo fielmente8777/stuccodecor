@@ -275,7 +275,7 @@ export default function StuccoContactForm() {
             lineHeight: "1.5rem",
             color: "rgb(255 79 71)",
             fontWeight: "700",
-            paddingBottom: "1rem",
+            paddingBottom: "0.5rem",
           }}
         >
           contact with us
@@ -285,7 +285,7 @@ export default function StuccoContactForm() {
             fontSize: "1.5rem",
             lineHeight: "1.5rem",
             fontWeight: "700",
-            paddingBottom: "1rem",
+            // paddingBottom: "0.5rem",
           }}
         >
           Feel free to write our Mouldings experts
