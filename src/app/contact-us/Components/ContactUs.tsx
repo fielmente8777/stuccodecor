@@ -15,7 +15,7 @@ interface contactDetailsProps {
 const ContactUs: React.FC<contactDetailsProps> = ({ title, details }) => {
   return (
     <SectionWithContainer sectionClassName="relative max-md:py-10 after:absolute after:bg-[url('/bg3.png')] after:w-[34.7rem] after:bg-no-repeat after:right-0 after:h-[90%] after:bottom-0 after:opacity-30 after:z-[-1]">
-      <div className="w-full grid md:grid-cols-2 grid-cols-1 md:gap-16 gap-10">
+      <div className="w-full grid md:grid-cols-2 grid-cols-1 items-center md:gap-16 gap-10">
         <div className="box_shadow flex flex-col gap-4 overflow-hidden">
           {/* <h2 className="description2 manrope text-center font-bold text-primary uppercase">
             contact with us

@@ -74,7 +74,7 @@ const S = {
     alignItems: "center",
     justifyContent: "center",
     paddingTop: "20px",
-    paddingBottom: "24px",
+    // paddingBottom: "24px",
     borderTop: "1px solid #e8e8e8",
   },
   labelDesktop: {
@@ -285,7 +285,7 @@ export default function StuccoContactForm() {
             fontSize: "1.5rem",
             lineHeight: "1.5rem",
             fontWeight: "700",
-            // paddingBottom: "0.5rem",
+            paddingBottom: "0.5rem",
           }}
         >
           Feel free to write our Mouldings experts
