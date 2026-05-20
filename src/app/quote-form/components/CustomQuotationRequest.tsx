@@ -1,17 +1,16 @@
 "use client";
-import { MainHeading, Section } from "@/components";
-import { exteriorProductspageData } from "@/data/pageData";
-import useClickOutside from "@/hooks/useClickOutside";
 import { useRef, useState } from "react";
 import { MdArrowDropDown } from "react-icons/md";
 import emailjs from "@emailjs/browser";
+import useClickOutside from "@/hooks/useClickOutside";
+import { exteriorProductspageData } from "@/data/pageData";
+import { MainHeading, Section } from "@/components";
 
-const REACT_APP_EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const REACT_APP_EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID_2;
 
-const REACT_APP_EMAILJS_TEMPLATE_ID =
-  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const REACT_APP_EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID_2;
 
-const REACT_APP_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC;
+const REACT_APP_EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_2;
 
 const CustomQuotationRequest = () => {
   const items = [
@@ -56,19 +55,19 @@ const CustomQuotationRequest = () => {
 
   // Filter functions for each dropdown
   const filteredItems1 = items.filter((item) =>
-    item.toLowerCase().includes(searchTerm1.toLowerCase())
+    item.toLowerCase().includes(searchTerm1.toLowerCase()),
   );
   const filteredItems2 = items.filter((item) =>
-    item.toLowerCase().includes(searchTerm2.toLowerCase())
+    item.toLowerCase().includes(searchTerm2.toLowerCase()),
   );
   const filteredItems3 = items.filter((item) =>
-    item.toLowerCase().includes(searchTerm3.toLowerCase())
+    item.toLowerCase().includes(searchTerm3.toLowerCase()),
   );
   const filteredItems4 = items.filter((item) =>
-    item.toLowerCase().includes(searchTerm4.toLowerCase())
+    item.toLowerCase().includes(searchTerm4.toLowerCase()),
   );
   const filteredItems5 = items.filter((item) =>
-    item.toLowerCase().includes(searchTerm5.toLowerCase())
+    item.toLowerCase().includes(searchTerm5.toLowerCase()),
   );
 
   const [formData, setFormData] = useState({
@@ -188,7 +187,7 @@ const CustomQuotationRequest = () => {
         REACT_APP_EMAILJS_SERVICE_ID!,
         REACT_APP_EMAILJS_TEMPLATE_ID!,
         templateParams,
-        REACT_APP_EMAILJS_PUBLIC_KEY
+        REACT_APP_EMAILJS_PUBLIC_KEY,
       );
 
       setSubmitSuccess(true);
@@ -231,7 +230,7 @@ const CustomQuotationRequest = () => {
         <MainHeading
           h2
           title="Custom Quotation Request"
-          className="font-bold manrope !text-primary capitalize mb-8 mediumHeading"
+          className="font-bold manrope !text-primary text-center capitalize mb-8 mediumHeading"
         />
         <div className="max-w-3xl mx-auto w-ful shadow-2xl rounded-sm">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
@@ -648,7 +647,7 @@ const CustomQuotationRequest = () => {
                           onClick={() => {
                             setFormData((prevData) => ({
                               ...prevData,
-                              productItem4: item,
+                              product4: item,
                             }));
                             setIsOpen3(false);
                             setSearchTerm4("");
@@ -722,7 +721,7 @@ const CustomQuotationRequest = () => {
                           onClick={() => {
                             setFormData((prevData) => ({
                               ...prevData,
-                              productItem5: item,
+                              product5: item,
                             }));
                             setIsOpen4(false);
                             setSearchTerm5("");
