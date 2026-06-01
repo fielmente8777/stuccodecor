@@ -92,6 +92,12 @@ const CustomQuotationRequest = () => {
     quantity3: "",
     quantity4: "",
     quantity5: "",
+
+    specifyType1: "",
+    specifyType2: "",
+    specifyType3: "",
+    specifyType4: "",
+    specifyType5: "",
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -149,22 +155,27 @@ const CustomQuotationRequest = () => {
       const itemsData = `
           Item 1:
           Product: ${formData.product1}
+          Type: ${formData.specifyType1}
           Quantity: ${formData.quantity1}
 
           Item 2:
           Product: ${formData.product2}
+          Type: ${formData.specifyType2}
           Quantity: ${formData.quantity2}
 
           Item 3:
           Product: ${formData.product3}
+          Type: ${formData.specifyType3}
           Quantity: ${formData.quantity3}
 
           Item 4:
           Product: ${formData.product4}
+          Type: ${formData.specifyType4}
           Quantity: ${formData.quantity4}
 
           Item 5:
           Product: ${formData.product5}
+          Type: ${formData.specifyType5}
           Quantity: ${formData.quantity5}
           `;
 
@@ -212,6 +223,11 @@ const CustomQuotationRequest = () => {
         product3: "",
         product4: "",
         product5: "",
+        specifyType1: "",
+        specifyType2: "",
+        specifyType3: "",
+        specifyType4: "",
+        specifyType5: "",
       });
       setTimeout(() => {
         setSubmitSuccess(false);
@@ -377,7 +393,7 @@ const CustomQuotationRequest = () => {
 
                 <div className="w-full h-px bg-gray-300"></div>
 
-                <div ref={dropDown1} className="relative w-full max-w-[21rem]">
+                <div ref={dropDown1} className="relative w-full max-w-[32rem]">
                   <button
                     type="button"
                     onClick={() => setIsOpen(!isOpen)}
@@ -436,6 +452,19 @@ const CustomQuotationRequest = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="w-full flex gap-3 flex-col">
+                    <label htmlFor="specifyType1">Specify Type</label>
+
+                    <input
+                      type="text"
+                      name="specifyType1"
+                      value={formData.specifyType1}
+                      onChange={handleChange}
+                      placeholder="e.g.T101"
+                      className="border w-full border-gray-300 rounded-md p-2"
+                    />
+                  </div>
+
+                  <div className="w-full flex gap-3 flex-col">
                     <label htmlFor="quantity1">Quantity</label>
 
                     <input
@@ -448,6 +477,14 @@ const CustomQuotationRequest = () => {
                     />
                   </div>
                 </div>
+                <a
+                  href="https://stuccodecor.com/exterior-products/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 underline text-sm w-fit"
+                >
+                  Click here to check type
+                </a>
               </div>
 
               {/* Item 2 */}
@@ -458,7 +495,7 @@ const CustomQuotationRequest = () => {
 
                 <div className="w-full h-px bg-gray-300"></div>
 
-                <div ref={dropDown2} className="relative w-full max-w-[21rem]">
+                <div ref={dropDown2} className="relative w-full max-w-[32rem]">
                   <button
                     type="button"
                     onClick={() => setIsOpen1(!isOpen1)}
@@ -517,6 +554,19 @@ const CustomQuotationRequest = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="w-full flex gap-3 flex-col">
+                    <label htmlFor="specifyType2">Specify Type</label>
+
+                    <input
+                      type="text"
+                      name="specifyType2"
+                      value={formData.specifyType2}
+                      onChange={handleChange}
+                      placeholder="e.g.T101"
+                      className="border w-full border-gray-300 rounded-md p-2"
+                    />
+                  </div>
+
+                  <div className="w-full flex gap-3 flex-col">
                     <label htmlFor="quantity2">Quantity</label>
 
                     <input
@@ -529,6 +579,14 @@ const CustomQuotationRequest = () => {
                     />
                   </div>
                 </div>
+                <a
+                  href="https://stuccodecor.com/exterior-products/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 underline text-sm w-fit"
+                >
+                  Click here to check type
+                </a>
               </div>
 
               {/* Item 3 */}
@@ -537,7 +595,7 @@ const CustomQuotationRequest = () => {
                   Item 3
                 </h2>
                 <div className="w-full h-px bg-gray-300"></div>
-                <div ref={dropDown3} className="relative w-full max-w-[21rem]">
+                <div ref={dropDown3} className="relative w-full max-w-[32rem]">
                   <button
                     type="button"
                     onClick={() => setIsOpen2(!isOpen2)}
@@ -591,6 +649,19 @@ const CustomQuotationRequest = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="w-full flex gap-3 flex-col">
+                    <label htmlFor="specifyType3">Specify Type</label>
+
+                    <input
+                      type="text"
+                      name="specifyType3"
+                      value={formData.specifyType3}
+                      onChange={handleChange}
+                      placeholder="e.g.T101"
+                      className="border w-full border-gray-300 rounded-md p-2"
+                    />
+                  </div>
+
+                  <div className="w-full flex gap-3 flex-col">
                     <label htmlFor="name">Quantity</label>
                     <input
                       type="text"
@@ -602,6 +673,14 @@ const CustomQuotationRequest = () => {
                     />
                   </div>
                 </div>
+                <a
+                  href="https://stuccodecor.com/exterior-products/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 underline text-sm w-fit"
+                >
+                  Click here to check type
+                </a>
               </div>
 
               {/* Item 4 */}
@@ -610,7 +689,7 @@ const CustomQuotationRequest = () => {
                   Item 4
                 </h2>
                 <div className="w-full h-px bg-gray-300"></div>
-                <div ref={dropDown4} className="relative w-full max-w-[21rem]">
+                <div ref={dropDown4} className="relative w-full max-w-[32rem]">
                   <button
                     type="button"
                     onClick={() => setIsOpen3(!isOpen3)}
@@ -664,6 +743,19 @@ const CustomQuotationRequest = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="w-full flex gap-3 flex-col">
+                    <label htmlFor="specifyType4">Specify Type</label>
+
+                    <input
+                      type="text"
+                      name="specifyType4"
+                      value={formData.specifyType4}
+                      onChange={handleChange}
+                      placeholder="e.g.T101"
+                      className="border w-full border-gray-300 rounded-md p-2"
+                    />
+                  </div>
+
+                  <div className="w-full flex gap-3 flex-col">
                     <label htmlFor="name">Quantity</label>
                     <input
                       type="text"
@@ -676,6 +768,14 @@ const CustomQuotationRequest = () => {
                     />
                   </div>
                 </div>
+                <a
+                  href="https://stuccodecor.com/exterior-products/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 underline text-sm w-fit"
+                >
+                  Click here to check type
+                </a>
               </div>
 
               {/* Item 5 */}
@@ -684,7 +784,7 @@ const CustomQuotationRequest = () => {
                   Item 5
                 </h2>
                 <div className="w-full h-px bg-gray-300"></div>
-                <div ref={dropDown5} className="relative w-full max-w-[21rem]">
+                <div ref={dropDown5} className="relative w-full max-w-[32rem]">
                   <button
                     type="button"
                     onClick={() => setIsOpen4(!isOpen4)}
@@ -738,6 +838,19 @@ const CustomQuotationRequest = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="w-full flex gap-3 flex-col">
+                    <label htmlFor="specifyType5">Specify Type</label>
+
+                    <input
+                      type="text"
+                      name="specifyType5"
+                      value={formData.specifyType5}
+                      onChange={handleChange}
+                      placeholder="e.g.T101"
+                      className="border w-full border-gray-300 rounded-md p-2"
+                    />
+                  </div>
+
+                  <div className="w-full flex gap-3 flex-col">
                     <label htmlFor="name">Quantity</label>
                     <input
                       type="text"
@@ -750,6 +863,14 @@ const CustomQuotationRequest = () => {
                     />
                   </div>
                 </div>
+                <a
+                  href="https://stuccodecor.com/exterior-products/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 underline text-sm w-fit"
+                >
+                  Click here to check type
+                </a>
               </div>
             </div>
 
