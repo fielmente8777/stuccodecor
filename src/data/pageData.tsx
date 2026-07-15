@@ -3,7 +3,7 @@ import { imageUrl } from "./links";
 
 export const homePageData = {
   bannerData: {
-    title: "CONTEMPORARY EXQUISITE ONE OF A KIND",
+    title: " Exterior Stucco & EIFS Moulding Manufacturer in Mississauga",
     src: imageUrl + "bnr1.webp",
     desc: "",
     buttons: [
@@ -15,20 +15,13 @@ export const homePageData = {
   },
   aboutUsData: {
     title: "About Stucco Decor.",
-    subtitle: "Shaping Exteriors since 2008",
-    desc: `We are delighted to have you visit our website, where we proudly
-    stand as a leading manufacturer of exterior moulding. At Stucco
-    Décor Moulding, we take pride in transforming ordinary building
-    exteriors into extraordinary works of art with our high-quality exterior
-    mouldings. Explore our collection, discover innovative designs, and
-    learn about our commitment to quality and customer satisfaction.
-    Thank you for choosing Stucco Décor Moulding where your dreams of
-    elegance and sophistication begin.`,
+    subtitle: "Since 2008",
+    desc: `Stucco Décor has manufactured premium EIFS and stucco exterior mouldings from our Mississauga facility, serving homeowners, builders, and architects across the GTA. Every piece — from cornices and columns to fully custom trim profiles — is crafted in-house using lightweight, durable EPS material engineered for easy installation and long-term performance. If you're planning a renovation or new build, our team designs and manufactures mouldings tailored to your exact specifications, at prices that keep your project on budget.`,
     src: imageUrl + "im3.webp",
   },
   WhyChooseUs: {
     title: "Why Choose Us",
-    desc: "Stucco Décor Mouldings, a Mississauga based leading provider of Exterior S-EIFS Mouldings s thriving for excellence and trusted for delivering top-tier moulding solutions.",
+    desc: "As a direct manufacturer rather than a reseller, Stucco Décor controls quality at every stage of production — meaning tighter tolerances, faster turnaround, and pricing without a middleman markup. Our Mississauga facility ships custom orders on schedule across Ontario, and our design team works directly with architects and contractors to bring non-standard profiles to life.",
   },
   whyStucco: {
     title: "A few reasons why Stucco Décor Moulding stands out:",
